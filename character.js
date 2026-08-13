@@ -10,7 +10,7 @@ function drawAlienChar(t_char) {
     line(t_char.x - 5, t_char.y - 70, t_char.x - 13, t_char.y - 82);
     line(t_char.x + 4, t_char.y - 70, t_char.x + 10, t_char.y - 82);
 
-    fill(120, 210, 80);
+    fill(100, 60, 180);
     ellipse(t_char.x - 14, t_char.y - 84, 6, 6);
     ellipse(t_char.x + 11, t_char.y - 84, 6, 6);
 
@@ -66,7 +66,7 @@ function drawAlienChar(t_char) {
     line(t_char.x - 4, t_char.y - 70, t_char.x - 10, t_char.y - 82);
     line(t_char.x + 5, t_char.y - 70, t_char.x + 13, t_char.y - 82);
 
-    fill(120, 210, 80);
+    fill(100, 60, 180);
     ellipse(t_char.x - 11, t_char.y - 84, 6, 6);
     ellipse(t_char.x + 14, t_char.y - 84, 6, 6);
 
@@ -122,7 +122,7 @@ function drawAlienChar(t_char) {
     line(t_char.x - 4, t_char.y - 70, t_char.x - 13, t_char.y - 82);
     line(t_char.x + 4, t_char.y - 70, t_char.x + 8, t_char.y - 82);
 
-    fill(120, 210, 80);
+    fill(100, 60, 180);
     ellipse(t_char.x - 14, t_char.y - 84, 6, 6);
     ellipse(t_char.x + 9, t_char.y - 84, 6, 6);
 
@@ -278,12 +278,13 @@ function drawAlienChar(t_char) {
     //Character Standing Front Facing
 
     // Antennas
+
     stroke(0);
     strokeWeight(2);
     line(t_char.x - 8, t_char.y - 70, t_char.x - 14, t_char.y - 84);
     line(t_char.x + 8, t_char.y - 70, t_char.x + 14, t_char.y - 84);
 
-    fill(120, 210, 80);
+    fill(100, 60, 180);
     ellipse(t_char.x - 15, t_char.y - 86, 6, 6);
     ellipse(t_char.x + 15, t_char.y - 86, 6, 6);
 
@@ -301,7 +302,7 @@ function drawAlienChar(t_char) {
     ellipse(t_char.x - 12, t_char.y - 65, 3, 4);
     ellipse(t_char.x + 8, t_char.y - 65, 3, 4);
 
-    // Smile
+    //Smile
     noFill();
     stroke(0);
     arc(t_char.x, t_char.y - 53, 9, 6, 0, PI);
