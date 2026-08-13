@@ -26,6 +26,14 @@ var lives;
 
 var jumpSound;
 
+function preload() {
+  //Loading sound into the game
+  soundFormats("mp3", "wav");
+
+  jumpSound = loadSound("assets/jump.wav");
+  jumpSound.setVolume(0.1);
+}
+
 function setup() {
   createCanvas(1024, 576);
   floorPos_y = (height * 3) / 4;
@@ -122,6 +130,7 @@ function keyPressed() {
     isRight = true;
   }
   if (keyCode === 38 && gameChar.y == floorPos_y) {
+    jumpSound.play();
     isJumping = true;
   }
 
