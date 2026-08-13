@@ -24,6 +24,8 @@ var flagPole;
 var gameScore;
 var lives;
 
+var jumpSound;
+
 function setup() {
   createCanvas(1024, 576);
   floorPos_y = (height * 3) / 4;
