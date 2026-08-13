@@ -129,3 +129,24 @@ function checkPlayerDie(t_char) {
     }
   }
 }
+
+//Function to display messages
+function displayMessage() {
+  if (flagPole.isReached) {
+    fill(0);
+    textSize(30);
+    text(
+      "Level Complete! Press space to continue.",
+      cameraPosX + width / 4,
+      height / 2,
+    );
+  } else if (lives < 1) {
+    fill(0);
+    textSize(30);
+    text(
+      "Game Over. Press space to continue.",
+      cameraPosX + width / 4,
+      height / 2,
+    );
+  }
+}

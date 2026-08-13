@@ -96,23 +96,7 @@ function draw() {
 
   // Display game over message if character falls into a canyon
 
-  if (flagPole.isReached) {
-    fill(0);
-    textSize(30);
-    text(
-      "Level Complete! Press space to continue.",
-      cameraPosX + width / 4,
-      height / 2,
-    );
-  } else if (lives < 1) {
-    fill(0);
-    textSize(30);
-    text(
-      "Game Over. Press space to continue.",
-      cameraPosX + width / 4,
-      height / 2,
-    );
-  }
+  displayMessage();
 
   //Game Character
   drawAlienChar(gameChar);
@@ -139,7 +123,7 @@ function keyPressed() {
     isJumping = true;
   }
 
-  // // Restart the game when space is pressed after falling into a canyon
+  // // Restart the game when space is pressed after falling into a canyon or dying
   if (keyCode === 32 && flagPole.isReached) {
     startGame();
   } else if (keyCode === 32 && lives < 1) {
